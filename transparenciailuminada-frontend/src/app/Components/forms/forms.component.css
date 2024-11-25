@@ -1,0 +1,46 @@
+.form-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  
+  input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+  
+  button:hover {
+    background: #ffcc66;
+    color: black;
+  }
+  
+  .protocolo {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9f7ef;
+    border: 1px solid #d4edda;
+    border-radius: 4px;
+    color: #155724;
+  }
+  

@@ -1,0 +1,40 @@
+<div class="form-container">
+    <form (ngSubmit)="onSubmit()" [formGroup]="formulario">
+      <h2>Registro de Problemas de Iluminação</h2>
+  
+      <label for="nome">Nome</label>
+      <input id="nome" formControlName="nome" type="text" placeholder="Seu nome" />
+  
+      <label for="cpf">CPF</label>
+      <input id="cpf" formControlName="cpf" type="text" placeholder="000.000.000-00" (input)="formatCpf($event)"/>
+  
+      <label for="telefone">Telefone</label>
+      <input id="telefone" formControlName="telefone" type="tel" placeholder="(00) 00000-0000" (input)="formatTelefone($event)" />
+  
+      <label for="logradouro">Logradouro</label>
+      <input id="logradouro" formControlName="logradouro" type="text" placeholder="Rua, Avenida, etc." />
+  
+      <label for="referencia">Referência</label>
+      <input id="referencia" formControlName="referencia" type="text" placeholder="Próximo a..." />
+  
+      <label for="tipoLampada">Tipo de Lâmpada</label>
+      <select id="tipoLampada" formControlName="tipoLampada">
+        <option value="led">LED</option>
+        <option value="incandescente">Incandescente</option>
+      </select>
+  
+      <label for="tipoProblema">Tipo de Problema</label>
+      <select id="tipoProblema" formControlName="tipoProblema">
+        <option value="queimada">Queimada</option>
+        <option value="quebrada">Quebrada</option>
+        <option value="piscando">Piscando</option>
+      </select>
+  
+      <button type="submit">Enviar</button>
+    </form>
+  
+    <div *ngIf="protocolo" class="protocolo">
+      <p>Protocolo gerado: <strong>{{ protocolo }}</strong></p>
+    </div>
+  </div>
+  

@@ -1,0 +1,73 @@
+/* Estilo para o section */
+section {
+    display: table;  /* Faz com que o section se comporte como uma tabela */
+    margin-left: auto;
+    margin-right: auto;  /* Centraliza o section */
+    text-align: center;  /* Centraliza o conteúdo */
+}
+
+/* Estilo para a linha do botão */
+.example-button-row {
+    display: table-cell;   /* Faz com que o botão se comporte como uma célula de tabela */
+    max-width: 600px;      /* Limita a largura máxima da célula */
+    width: 100%;           /* Garante que o conteúdo da célula ocupe toda a largura disponível */
+}
+
+/* Estilo para o botão */
+.example-button-row a {
+    background-color:#FFCC66;  
+    font-family: sans-serif;
+    font-size: 23px;
+    color: #fff;   
+    width: 256px;                /* Largura inicial do botão */
+    height: 66px;                /* Altura do botão */
+    display: flex;               /* Usando flexbox para centralizar o conteúdo */
+    justify-content: center;    
+    align-items: center;        
+    text-align: center;         
+    text-decoration: none;     
+    border-radius: 0.1px;                    
+    margin: 8px 8px 8px 0;      
+}
+
+/* Efeito de hover no botão */
+.example-button-row a:hover {
+    background-color: #FF6600;  /* Cor de fundo mais escura quando o mouse passa sobre o botão */
+    color: black;
+}
+
+/* Estilo para o container flexível */
+.example-flex-container {
+    display: flex;               /* Usando flexbox para disposição dos elementos */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-wrap: wrap;             /* Permite que os itens quebrem para a linha seguinte se necessário */
+}
+
+/* Media Queries para Responsividade */
+
+/* Para telas de dispositivos móveis */
+@media (max-width: 600px) {
+    .example-button-row a {
+        width: 200px;              /* Ajusta a largura do botão para 200px em telas pequenas */
+        font-size: 18px;           /* Diminui o tamanho da fonte */
+        height: 50px;              /* Ajusta a altura para 50px */
+    }
+}
+
+/* Para telas de tablets (até 768px) */
+@media (max-width: 768px) {
+    .example-button-row a {
+        width: 220px;              /* Ajusta a largura do botão para 220px */
+        font-size: 20px;           /* Ajusta o tamanho da fonte */
+        height: 58px;              /* Ajusta a altura para 58px */
+    }
+}
+
+/* Para telas de desktop maiores (acima de 1024px) */
+@media (min-width: 1024px) {
+    .example-button-row a {
+        width: 256px;              /* Mantém a largura original em telas grandes */
+        font-size: 23px;           /* Mantém o tamanho original da fonte */
+        height: 66px;              /* Mantém a altura original */
+    }
+}

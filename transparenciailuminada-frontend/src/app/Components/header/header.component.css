@@ -1,0 +1,67 @@
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    color: #521d16;
+    font-size: 23px;
+    width: 100%; /* Para garantir que ocupe toda a largura */
+    max-width: 1097px; /* Limita a largura máxima */
+    height: 53px;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-left: 70px;
+    align-items: center;
+}
+
+#imglogo {
+    width: 236px;
+    height: 53px;
+    max-width: 100%; /* Faz a imagem ajustar-se ao tamanho da tela */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.nav-link:link, .nav-link:active, .nav-link:visited, .nav-link:hover {
+    color: #521d16;
+    text-decoration: none; /* Garante que os links não tenham sublinhado */
+}
+
+.nav-link:hover {
+    color: #521d16;
+}
+
+/* Ajustes responsivos para telas menores */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Empilha os itens verticalmente */
+        font-size: 18px; /* Reduz o tamanho da fonte */
+        margin-left: 0; /* Remove a margem lateral */
+        padding: 10px; /* Adiciona um padding para as laterais */
+    }
+
+    .nav-link {
+        font-size: 16px; /* Ajusta o tamanho das fontes dos links */
+        margin: 5px 0; /* Adiciona espaçamento entre os links */
+        text-align: center; /* Centraliza os links */
+        width: 100%; /* Faz os links ocuparem toda a largura disponível */
+    }
+}
+
+/* Ajustes para telas menores que 480px */
+@media (max-width: 480px) {
+    header {
+        font-size: 16px; /* Reduz ainda mais o tamanho da fonte */
+        padding: 10px; /* Ajusta o padding */
+    }
+
+    .nav-link {
+        font-size: 14px; /* Ajusta o tamanho da fonte */
+        text-align: center; /* Garante que os links fiquem centralizados */
+        width: 100%; /* Faz com que os links ocupem toda a largura */
+    }
+
+    #imglogo {
+        width: 150px; /* Ajusta a largura da imagem para telas pequenas */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+}
